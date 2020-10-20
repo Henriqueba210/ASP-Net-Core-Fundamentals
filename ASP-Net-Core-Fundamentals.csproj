@@ -5,4 +5,7 @@
     <RootNamespace>ASP_Net_Core_Fundamentals</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\HelloWorld\" />
+  </ItemGroup>
 </Project>

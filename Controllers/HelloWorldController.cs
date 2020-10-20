@@ -11,9 +11,9 @@ namespace ASP_Net_Core_Fundamentals.Controllers
     public class HelloWorldController : Controller
     {
         // GET: /<controller>/
-        public string Index()
+        public IActionResult Index()
         {
-            return "This is the default action";
+            return View();
         }
 
         public string Welcome()
