@@ -55,6 +55,10 @@ namespace ASP_Net_Core_Fundamentals
                     pattern: "{controller=Home}/{action=Index}/{id?}");
 
                 endpoints.MapControllers();
+                endpoints.MapGet("/jsonTest", async context =>
+                {
+                    await context.Response.BodyWriter.WriteAsync(Encoding.ASCII.GetBytes(_configuration["MyMessage"]));
+                });
             });
         }
     }
